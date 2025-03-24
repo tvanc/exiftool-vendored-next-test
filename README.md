@@ -13,6 +13,8 @@ in a Next.js application.
 3. Open [http://localhost:3001](http://localhost:3001) in your browser
 4. Observe the error: `BatchCluster has ended, cannot enqueue …`
 
+Open [`src/app/page.tsx`](src/app/page.tsx) to see the code that triggers this error.
+
 ## `exiftool-vendored` succeeds when called directly from node.js script
 
 1. Run this command
