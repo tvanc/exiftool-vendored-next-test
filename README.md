@@ -24,16 +24,19 @@ Open [`src/app/page.tsx`](src/app/page.tsx) to see the code that triggers this e
 
 ## `exiftool-vendored` errors out immediately
 
+1. Reload [localhost:3001](http://localhost:3001) in your browser
+2. Observe the error: `BatchCluster has ended, cannot enqueue …`
+
+---
+
+## `exiftool-vendored` _succeeds_ when called from CLI script within Docker
+
 1. Open a shell into the container
     ```bash
     docker exec -it exiftool-vendored-next-test-exiftool-vendored-next-test-1 sh
     ```
 2. Run `node test.ts`
 3. The tags from the included video display immediately.
-4. Reload [localhost:3001](http://localhost:3001) in your browser
-5. Observe the error: `BatchCluster has ended, cannot enqueue …`
-
----
 
 ## `exiftool-vendored` _succeeds_ when used without Docker
 
