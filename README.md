@@ -1,12 +1,14 @@
 # Example of error in `exiftool-vendored`
 
-This repository demonstrates a failure state in `exiftool-vendored` when used in a Docker container and in a Next.js application.
+This repository demonstrates two failure states in `exiftool-vendored` when used in a Docker container and in a Next.js application.
 
 This same issue may exist with other frameworks or in other situations, but this is the context in which I encountered it.
 
-There are two error states:
+There are two error states, which occur in this order:
 1. `exiftool.read(…)` hangs forever
 2. `exiftool.read(…)` errors out immediately
+
+The steps to reproduce each are described below.
 
 ## `exiftool-vendored` hangs forever
 
